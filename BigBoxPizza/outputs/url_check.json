@@ -1,0 +1,723 @@
+{
+ "checked_at": "2026-10-16T01:14:06Z",
+ "rows": [
+  {
+   "id": "S001",
+   "url": "BigBoxPizza/evidence/NFC-OFFER-2026-0120_original.pdf",
+   "host": "(local file)",
+   "result": "local_file_ok",
+   "code": null
+  },
+  {
+   "id": "S010",
+   "url": "https://www.htshub.com/us-hs/head/4819",
+   "host": "www.htshub.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S011",
+   "url": "https://rulings.cbp.gov/ruling/n326229",
+   "host": "rulings.cbp.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S012",
+   "url": "https://rulings.cbp.gov/ruling/N310192",
+   "host": "rulings.cbp.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S013",
+   "url": "https://www.tarifflens.ai/hts/heading/4819",
+   "host": "www.tarifflens.ai",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S014",
+   "url": "https://ustr.gov/sites/default/files/files/Press/Releases/2026/FLIP%20301%20Investigation%20Final%20Action%20FRN%207-23-26%20FINAL.pdf",
+   "host": "ustr.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S015",
+   "url": "https://www.federalregister.gov/documents/2026/07/28/2026-15274/actions-by-the-united-states-in-the-investigations-under-section-301-of-the-trade-act-of-1974-of-the",
+   "host": "www.federalregister.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S016",
+   "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/421d887",
+   "host": "content.govdelivery.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S017",
+   "url": "https://gatewaylines.com/press-releases/section-301-forced-labor-tariffs",
+   "host": "gatewaylines.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S018",
+   "url": "https://globaltradealert.org/blog/forced-labour-section-301-final-action",
+   "host": "globaltradealert.org",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S019",
+   "url": "https://egyptianstreets.com/2026/07/26/us-imposes-12-5-percent-tariff-on-egypt-under-new-trade-measures/",
+   "host": "egyptianstreets.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S020",
+   "url": "https://www.exfreight.com/section-301-forced-labor-tariffs-court/",
+   "host": "www.exfreight.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S021",
+   "url": "https://ropesgray.com/en/insights/alerts/2026/02/supreme-court-strikes-down-ieepa-tariffs-key-takeaways-and-implications-for-importers",
+   "host": "ropesgray.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S022",
+   "url": "https://strixsmart.com/section-122-surcharge",
+   "host": "strixsmart.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S023",
+   "url": "https://www.thompsoncoburn.com/insights/53-september-30-2025-trump-administration-issues-proclamation-imposing-10-25-section-232-tariffs-on-certain-timber-wood-products/",
+   "host": "www.thompsoncoburn.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S024",
+   "url": "https://www.federalregister.gov/documents/2026/07/31/2026-15530/customs-user-fees-to-be-adjusted-for-inflation-in-fiscal-year-2027",
+   "host": "www.federalregister.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S025",
+   "url": "https://www.law.cornell.edu/cfr/text/19/24.24",
+   "host": "www.law.cornell.edu",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S026",
+   "url": "https://www.law.cornell.edu/cfr/text/19/152.103",
+   "host": "www.law.cornell.edu",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S027",
+   "url": "https://www.law.cornell.edu/cfr/text/19/134.24",
+   "host": "www.law.cornell.edu",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S028",
+   "url": "https://www.tarifflens.ai/rulings/734027",
+   "host": "www.tarifflens.ai",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S030",
+   "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-176/subpart-B/section-176.170",
+   "host": "www.ecfr.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S031",
+   "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-announces-pfas-used-grease-proofing-agents-food-packaging-no-longer-being-sold-us",
+   "host": "www.fda.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S032",
+   "url": "https://newyork.public.law/laws/n.y._environmental_conservation_law_section_37-0209",
+   "host": "newyork.public.law",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S033",
+   "url": "https://www.sgs.com/en-us/news/2022/04/safeguards-05522-maryland-usa-regulates-pfas-in-certain-consumer-goods",
+   "host": "www.sgs.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S034",
+   "url": "https://www.bclplaw.com/en-US/events-insights-news/pfas-in-food-packaging-state-by-state-regulations.html",
+   "host": "www.bclplaw.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S035",
+   "url": "https://dec.ny.gov/environmental-protection/pollution-prevention/nys-hazardous-packaging-act",
+   "host": "dec.ny.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S036",
+   "url": "https://www.pffc-online.com/magazine/378-paper-two-fda-bioterrorism",
+   "host": "www.pffc-online.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S037",
+   "url": "https://www.freightwaves.com/news/cbp-defines-102-penalty",
+   "host": "www.freightwaves.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S038",
+   "url": "https://gingercontrol.com/blog/single-entry-vs-continuous-bond",
+   "host": "gingercontrol.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S039",
+   "url": "https://suaidglobal.com/insights/customs-broker-fees-2026/",
+   "host": "suaidglobal.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S040",
+   "url": "https://cbp.gov/sites/default/files/2024-06/cbp_form_5106.pdf",
+   "host": "cbp.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S041",
+   "url": "https://www.dsv.com/en/our-solutions/modes-of-transport/sea-freight/shipping-container-dimensions/dry-container",
+   "host": "www.dsv.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S042",
+   "url": "https://eascpcd.maersk.com/~/media_sc9/maersk/local-information/files/europe/italy/export/equipment-flyer.pdf",
+   "host": "eascpcd.maersk.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S043",
+   "url": "https://www.freightfigures.com/articles/overweight-container-port-of-charleston",
+   "host": "www.freightfigures.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S044",
+   "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry",
+   "host": "www.drewry.co.uk",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S045",
+   "url": "https://www.balticexchange.com/en/data-services/WeeklyRoundup/Container/News/2026/container-report-week-40.html",
+   "host": "www.balticexchange.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S046",
+   "url": "https://www.hellenicshippingnews.com/xeneta-weekly-ocean-container-shipping-market-update-8/",
+   "host": "www.hellenicshippingnews.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S047",
+   "url": "https://www.ajot.com/news/cma-cgm-fak-rates-from-the-mediterranean-to-usa-canada-and-also-tuerkiye-egypt-med-syria-to-australia-new-zealand",
+   "host": "www.ajot.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S048",
+   "url": "https://www.hapag-lloyd.com/fr/services-information/news/2026/06/shipping-from-egypt-to-usa--canada-and-mexico--a-gri-is-coming-u.html",
+   "host": "www.hapag-lloyd.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S049",
+   "url": "https://globy.com/freight-calculator/from-egypt/to-united-states",
+   "host": "globy.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S050",
+   "url": "https://www.hapag-lloyd.com/content/dam/website/downloads/pdf/Locals_EG.pdf",
+   "host": "www.hapag-lloyd.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S051",
+   "url": "https://seagateexpress.com/container-freight-egypt/",
+   "host": "seagateexpress.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S052",
+   "url": "https://blog.gettransport.com/trends-in-logistic/drayage-costs-chassis-problem-cut-port-dwell/",
+   "host": "blog.gettransport.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S053",
+   "url": "https://www.freightfigures.com/articles/charleston-vs-savannah-import-comparison",
+   "host": "www.freightfigures.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S054",
+   "url": "https://otrucking.com/resources/guides/chassis-fees-explained/",
+   "host": "otrucking.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S055",
+   "url": "https://www.freightfigures.com/articles/container-devanning-cost",
+   "host": "www.freightfigures.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S056",
+   "url": "https://www.panynj.gov/content/dam/port/customer-library-pdfs/CFC-Annual-Report-2026.pdf",
+   "host": "www.panynj.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S057",
+   "url": "https://eascpcd.maersk.com/~/media_sc9/maersk/local-information/files/north-america/united-states-of-america/import/us-import-detention-tariff-effective-01-jan-2026.pdf",
+   "host": "eascpcd.maersk.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S060",
+   "url": "https://www.mondaq.com/sales-taxes-vat-gst/1550770/vat-refund-from-eta",
+   "host": "www.mondaq.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S061",
+   "url": "https://www.dailynewsegypt.com/?p=848671",
+   "host": "www.dailynewsegypt.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S062",
+   "url": "https://eg.andersen.com/wp-content/uploads/2025/09/Law-No.-118-of-1975.pdf",
+   "host": "eg.andersen.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S063",
+   "url": "https://www.cbe.org.eg/en/",
+   "host": "www.cbe.org.eg",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S064",
+   "url": "https://english.ahram.org.eg/NewsContent/3/12/567974/Business/Economy/Egyptian-pound-weakens--against-US-dollar-since-ou.aspx",
+   "host": "english.ahram.org.eg",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S065",
+   "url": "https://www.businesstodayegypt.com/amp/1/7698/Egypt's-pound-seen-at-49-per-dollar-by-end-of",
+   "host": "www.businesstodayegypt.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S066",
+   "url": "https://almalnews.com/1941118/",
+   "host": "almalnews.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S067",
+   "url": "https://almalnews.com/1459365/",
+   "host": "almalnews.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S068",
+   "url": "https://www.globalpetrolprices.com/Egypt/diesel_prices/",
+   "host": "www.globalpetrolprices.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S069",
+   "url": "https://enterpriseam.com/logistics/2026/07/29/alexandrias-container-operator-is-raising-terminal-fees-just-as-egypts-ports-pick-up-rerouted-gulf-trade/",
+   "host": "enterpriseam.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S070",
+   "url": "https://www.maersk.com/local-information/europe/egypt/export",
+   "host": "www.maersk.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S071",
+   "url": "https://enterpriseam.com/egypt/2026/02/26/egypt-eyes-expanding-qiz-membership-as-talks-open-to-reduce-israeli-content-requirement/",
+   "host": "enterpriseam.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S072",
+   "url": "https://academy.iccwbo.org/incoterms/article/incoterms-2020-exw-or-fca/",
+   "host": "academy.iccwbo.org",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S073",
+   "url": "https://www.webstaurantstore.com/choice-14-x-14-x-2-kraft-corrugated-pizza-box-50-case/245CPB14PRINT.html",
+   "host": "www.webstaurantstore.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S074",
+   "url": "https://www.webstaurantstore.com/choice-12-x-12-x-2-kraft-corrugated-e-flute-pizza-box-bundle/245CPB12EPRINT.html",
+   "host": "www.webstaurantstore.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S075",
+   "url": "https://www.webstaurantstore.com/choice-12-x-12-x-2-kraft-corrugated-pizza-box-50-case/245CPB12PRINT.html",
+   "host": "www.webstaurantstore.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S076",
+   "url": "https://www.webstaurantstore.com/search/16x16-pizza-box.html",
+   "host": "www.webstaurantstore.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S077",
+   "url": "https://www.uline.com/Product/Detail/S-17593/Take-Out-Containers/Plain-Pizza-Boxes-14-x-14-x-2-White",
+   "host": "www.uline.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S078",
+   "url": "https://app.warehouserunner.com/costco/1984293-vital-solutions-14-pizza-box-50-ct",
+   "host": "app.warehouserunner.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S079",
+   "url": "https://www.imperialdade.com/catalog/product-detail/16-in-kraft-kraft-square-corrugated-cardboard-e-flute-pizza-box-microwave-safe-ov?id=360983",
+   "host": "www.imperialdade.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S080",
+   "url": "https://www.aztekc.com/boxpizzaflute14kft50-arvco-containers/p",
+   "host": "www.aztekc.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S081",
+   "url": "https://thinktank.pmq.com/t/corrugated-pizza-box-prices/1288",
+   "host": "thinktank.pmq.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S082",
+   "url": "https://www.webstaurantstore.com/blog/1138/types-and-sizes-of-corrugated-boxes.html",
+   "host": "www.webstaurantstore.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S083",
+   "url": "https://pizzatoday.com/?p=615558",
+   "host": "pizzatoday.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S084",
+   "url": "https://withorbital.com/data/largest-pizza-chains-in-the-us/",
+   "host": "withorbital.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S085",
+   "url": "https://pfgc.com/About/Roma",
+   "host": "pfgc.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S086",
+   "url": "https://yellowpages.com.eg/en/keyword/pizza-box",
+   "host": "yellowpages.com.eg",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S087",
+   "url": "https://hsagroup.com/explore-hsa-business/our-companies/industrial-companies/cepack-group.aspx",
+   "host": "hsagroup.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S088",
+   "url": "BigBoxPizza/working/02_research_log.md (search log, no web page)",
+   "host": "(local file)",
+   "result": "local_file_ok",
+   "code": null
+  },
+  {
+   "id": "S089",
+   "url": "https://www.logrock.com/uncategorized/marine-cargo-insurance-rates/",
+   "host": "www.logrock.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S090",
+   "url": "https://www.ippc.int/sites/default/files/documents/1110806941500_Chapter_11_US_import_requirements_2_E.pdf",
+   "host": "www.ippc.int",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S091",
+   "url": "https://www.flexport.com/help/customs-holds-and-exams/",
+   "host": "www.flexport.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S092",
+   "url": "https://www.hqts.com/?p=183995",
+   "host": "www.hqts.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S093",
+   "url": "https://www.macrotrends.net/stocks/charts/SYY/sysco/gross-margin",
+   "host": "www.macrotrends.net",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S094",
+   "url": "https://otrucking.com/dispatch/drayage/",
+   "host": "otrucking.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S095",
+   "url": "https://container-news.com/cma-cgm-announces-new-fak-rates-and-surcharges-from-october/",
+   "host": "container-news.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S096",
+   "url": "https://suaidglobal.com/insights/shipping-container-types-dimensions/",
+   "host": "suaidglobal.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S097",
+   "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20257/notice-of-extension-of-the-deadline-for-determining-the-adequacy-of-the-antidumping-and",
+   "host": "www.federalregister.gov",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Host denied by egress policy earlier in this session; not retried"
+  },
+  {
+   "id": "S098",
+   "url": "https://www.packagingdive.com/news/usitc-commerce-pizza-boxes-unfair-trade-duties-smurfit-westrock-pratt-industries/829983/",
+   "host": "www.packagingdive.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S099",
+   "url": "https://www.paperadvance.com/news/industry-news/u-s-opens-probe-into-pizza-box-imports.html",
+   "host": "www.paperadvance.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S100",
+   "url": "https://www.faegredrinker.com/en/insights/publications/2026/9/new-antidumping-duty-and-countervailing-duty-petitions-on-corrugated-pizza-boxes-from-china-malaysia-and-turkiye",
+   "host": "www.faegredrinker.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S101",
+   "url": "https://www.unisco.com/hts/48239086",
+   "host": "www.unisco.com",
+   "result": "blocked_by_policy",
+   "code": null,
+   "detail": "Tunnel connection failed: 403 Forbidden"
+  }
+ ]
+}

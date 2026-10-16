@@ -1,0 +1,214 @@
+{
+ "recalc_seconds": 2.4,
+ "source": "_build_formulas.xlsx",
+ "recalculated": "BigBoxPizza_US_Landed_Cost_Model.xlsx",
+ "libreoffice": "LibreOffice 24.2.7.2",
+ "sheets": [
+  "Executive Dashboard",
+  "Read Me & Instructions",
+  "Product & SKU Master",
+  "Supplier Quotation",
+  "Technical Specifications",
+  "Exchange Rates",
+  "Container Specifications",
+  "Loading Geometry",
+  "Shipment Configuration",
+  "Origin Costs",
+  "Ocean Freight",
+  "U.S. Port & Customs",
+  "Destination Delivery",
+  "Tariffs & Customs Value",
+  "Landed Cost by SKU",
+  "Pricing & Margin",
+  "Container Profitability",
+  "Sensitivity Analysis",
+  "Scenario Comparison",
+  "Cash Flow & Working Capital",
+  "Competitor Benchmark",
+  "Risk Register",
+  "Assumptions Register",
+  "Source Register",
+  "Quote Requests & Missing Data",
+  "Calc Engine",
+  "Model Checks"
+ ],
+ "missing_required_sheets": [],
+ "formula_cells": {
+  "Executive Dashboard": 115,
+  "Read Me & Instructions": 0,
+  "Product & SKU Master": 42,
+  "Supplier Quotation": 51,
+  "Technical Specifications": 8,
+  "Exchange Rates": 6,
+  "Container Specifications": 7,
+  "Loading Geometry": 1089,
+  "Shipment Configuration": 2672,
+  "Origin Costs": 27,
+  "Ocean Freight": 21,
+  "U.S. Port & Customs": 20,
+  "Destination Delivery": 31,
+  "Tariffs & Customs Value": 64,
+  "Landed Cost by SKU": 213,
+  "Pricing & Margin": 100,
+  "Container Profitability": 212,
+  "Sensitivity Analysis": 277,
+  "Scenario Comparison": 290,
+  "Cash Flow & Working Capital": 45,
+  "Competitor Benchmark": 24,
+  "Risk Register": 24,
+  "Assumptions Register": 411,
+  "Source Register": 0,
+  "Quote Requests & Missing Data": 0,
+  "Calc Engine": 25011,
+  "Model Checks": 25
+ },
+ "formula_cells_total": 30785,
+ "error_cells": [],
+ "error_count": 0,
+ "engine_rows_compared": 189,
+ "engine_values_per_row": 45,
+ "engine_mismatches": [],
+ "engine_mismatch_count": 0,
+ "geometry_mismatches": [],
+ "model_checks": [
+  [
+   "Quote line totals = qty × unit price",
+   "OK"
+  ],
+  [
+   "Quote subtotal reconciles",
+   "OK"
+  ],
+  [
+   "Quote tax = 14% × subtotal",
+   "OK"
+  ],
+  [
+   "Quote total reconciles",
+   "OK"
+  ],
+  [
+   "Quoted quantity = 60,000",
+   "OK"
+  ],
+  [
+   "Fixed configurations C1–C3 total 60,000 units in every scenario",
+   "OK"
+  ],
+  [
+   "Engine: SKU cost allocation sums to COGS on every row",
+   "OK"
+  ],
+  [
+   "Ledger economic total = engine COGS (selected case)",
+   "OK"
+  ],
+  [
+   "No duplicate cost IDs in ledger",
+   "OK"
+  ],
+  [
+   "Origin ledger lines = engine ORIGIN",
+   "OK"
+  ],
+  [
+   "Ocean + insurance ledger = engine",
+   "OK"
+  ],
+  [
+   "US duty/fees ledger = engine",
+   "OK"
+  ],
+  [
+   "Delivery & disruption ledger = engine",
+   "OK"
+  ],
+  [
+   "SKU allocation table total = engine COGS",
+   "OK"
+  ],
+  [
+   "Supplier quotation reconciles to shipment value (when units = quoted mix)",
+   "OK – reconciles"
+  ],
+  [
+   "Customs value build-up = engine customs value",
+   "OK"
+  ],
+  [
+   "Double-count flag: origin THC not also in ocean freight",
+   "OK – THC charged once (ocean estimate excludes OTHC)"
+  ],
+  [
+   "Double-count flag: CFC / insurance / chassis / unloading",
+   "OK – flags set (each item once)"
+  ],
+  [
+   "Recoverable VAT excluded from COGS unless mode 3",
+   "OK"
+  ],
+  [
+   "Equal-mix maxima (script values) still fit in all scenarios",
+   "OK"
+  ],
+  [
+   "Floor pattern equals exact DP optimum (all SKU × container × scenario)",
+   "OK"
+  ],
+  [
+   "No error values in engine key outputs",
+   "OK"
+  ],
+  [
+   "Supplier quotation expired (information)",
+   "WARN – expired quote used as historical reference"
+  ],
+  [
+   "FX observation within 7 days of valuation date",
+   "OK"
+  ],
+  [
+   "OVERALL STATUS",
+   "WARN – 1 warning(s), no failures"
+  ]
+ ],
+ "dashboard_snapshot": {
+  "BigBoxPizza – Egypt→US pizza-box import: Executive Dashboard": null,
+  "Change the three selectors (yellow). Every figure below is a formula on the engine. Evidence status of inputs is shown on each input sheet and in the Assumptions Register.": null,
+  "Selections": null,
+  "Scenario (1 = LOW, 2 = BASE, 3 = STRESS)": "2",
+  "Shipment configuration (1–10)": "1",
+  "Destination (1–5)": "1",
+  "Engine row (calculated)": "51",
+  "Valuation date": "2026-10-16 00:00:00",
+  "Verdict": null,
+  "Analyst verdict (see report §18)": "NO-GO under modeled conditions for the quoted NFC transaction. Do not pay any advance. Re-open only if the stated re-entry conditions are met (report §18–19).",
+  "Threshold test for the selected case (formula)": "NO-GO – thresholds unmet",
+  "Key results – selected case (USD unless stated)": null,
+  "Metric": "Value",
+  "Units shipped": "60000",
+  "Saleable units (after damage/rejection)": "59100",
+  "Containers": "1",
+  "Load fits physically?": "YES",
+  "DELIVERED COST per saleable box": 0.295334,
+  "Delivered cost per 1,000 boxes": 295.333895,
+  "Delivered cost per box in EGP": 15.586187,
+  "Achievable wholesale price (benchmark)": 0.243,
+  "Total delivered COGS": 17454.233188,
+  "Revenue at benchmark price": 14361.3,
+  "Gross profit": -3092.933188,
+  "Gross margin": -0.215366,
+  "Contribution after selling & financing": -7383.150284,
+  "Contribution margin": -0.5141,
+  "Price increase needed to break even": 0.545754,
+  "Supplier price change needed for target GM": -0.675955,
+  "Section 301 duty in this case": 1097.351387,
+  "Cash required before shipment": 7503.922327,
+  "Cash required at export": 10486.839514,
+  "Cash required before US release": 1682.504901,
+  "Cash required at delivery": "1510",
+  "TOTAL transaction cash outflow": 21183.266742,
+  "PEAK working capital": 21183.266742
+ },
+ "status": "PASS"
+}
