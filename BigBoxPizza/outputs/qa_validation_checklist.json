@@ -15,13 +15,13 @@
    "group": "Research",
    "item": "Source URLs work where accessible",
    "status": "LIMITED",
-   "evidence": "88 web URLs, all syntactically valid. Reachability check 2026-10-16T01:14:06Z: 0 reachable, 88 blocked by the session's egress policy (70 hosts, proxy CONNECT 403 – not a dead-link signal), 0 HTTP errors, 0 other network errors. Local evidence paths: 2 present, 0 missing. No URL could be opened from this environment; each must be re-opened by the client before reliance."
+   "evidence": "88 web URLs, all syntactically valid. Reachability check 2026-10-16T13:00:20Z: 0 reachable, 88 blocked by the session's egress policy (70 hosts, proxy CONNECT 403 – not a dead-link signal), 0 HTTP errors, 0 other network errors. Local evidence paths: 3 present, 0 missing. No URL could be opened from this environment; each must be re-opened by the client before reliance."
   },
   {
    "group": "Research",
    "item": "Publication and effective dates checked",
    "status": "PASS",
-   "evidence": "All 90 sources carry publication and access dates; access dates ≤ valuation date 2026-10-16. Section 301 Egypt 12.5% effective 2026-07-24; MPF FY2027 rates effective 2026-10-01; CBE FX observation (BASE) 2026-10-15 – all on or before the valuation date. NFC quote valid to 2026-09-30, so expired (treated as historical reference; Model Checks WARN). Undated or 'current' pages (14): S026, S027, S030, S035, S037, S041, S042, S079, S080, S081, S082, S085, S086, S087 – used only for regulations in force or non-time-critical facts, or flagged as anecdotal."
+   "evidence": "All 91 sources carry publication and access dates; access dates ≤ valuation date 2026-10-16. Section 301 Egypt 12.5% effective 2026-07-24; MPF FY2027 rates effective 2026-10-01; CBE FX observation (BASE) 2026-10-15 – all on or before the valuation date. NFC quote valid to 2026-09-30, so expired (treated as historical reference; Model Checks WARN). Undated or 'current' pages (14): S026, S027, S030, S035, S037, S041, S042, S079, S080, S081, S082, S085, S086, S087 – used only for regulations in force or non-time-critical facts, or flagged as anecdotal."
   },
   {
    "group": "Research",
@@ -141,7 +141,7 @@
    "group": "Deliverables",
    "item": "All required files exist",
    "status": "PASS",
-   "evidence": "BigBoxPizza_US_Market_and_Landed_Cost_Report.md (58 KB); BigBoxPizza_US_Landed_Cost_Model.xlsx (1,028 KB); BigBoxPizza_Source_Register.csv (54 KB); BigBoxPizza_Assumptions_and_Gaps.md (31 KB); BigBoxPizza_RFQ_Pack.md (14 KB); BigBoxPizza_Calculation_Audit.md (11 KB); scripts/ with 16 Python files (build_all.py rebuilds everything)."
+   "evidence": "BigBoxPizza_US_Market_and_Landed_Cost_Report.md (59 KB); BigBoxPizza_US_Landed_Cost_Model.xlsx (1,028 KB); BigBoxPizza_Source_Register.csv (55 KB); BigBoxPizza_Assumptions_and_Gaps.md (31 KB); BigBoxPizza_RFQ_Pack.md (14 KB); BigBoxPizza_Calculation_Audit.md (11 KB); scripts/ with 17 Python files (build_all.py rebuilds everything)."
   },
   {
    "group": "Deliverables",
@@ -159,7 +159,7 @@
    "group": "Deliverables",
    "item": "Source register CSV validated",
    "status": "PASS",
-   "evidence": "UTF-8, RFC-4180 quoting, 90 rows × 13 columns, 90 unique IDs, every evidence class one of the eight allowed labels. All 88 source IDs cited in the Markdown deliverables exist in the register."
+   "evidence": "UTF-8, RFC-4180 quoting, 91 rows × 13 columns, 91 unique IDs, every evidence class one of the eight allowed labels. All 89 source IDs cited in the Markdown deliverables exist in the register."
   },
   {
    "group": "Deliverables",

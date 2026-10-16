@@ -7,6 +7,7 @@ import charts as CH
 import engine as E
 import inputs as I
 import loading_model as LM
+import price_check as PC
 import registers as R
 import sources_data as SD
 
@@ -107,6 +108,15 @@ def report():
     parity = [r for l, r in sens if "import-parity" in l][0]
     s301_0 = [r for l, r in sens if l.startswith("Section 301 duty 0%")][0]
     best_base = max((idx[(1, ci, 0)] for ci in range(len(I.CONFIGS))), key=lambda r: r["CONTRIB"])
+    # October price check [S102]: market averages and the conflicting 12" B-flute snapshot ($16.99 against $15.99 E-flute)
+    e6_disc = 1 - 15.99 / 16.99
+    e6 = E.compute(1, 0, 0, dict(edisc=e6_disc))
+    pc_rows = PC.load()
+    pcs = PC.stats(pc_rows)
+    _, pc_alt, pc_rep, _ = PC.what_if(pcs)
+    pc_up = sum(pcs[z]["mean"] / I.MARKET["listing"][PC.SIZE_SKU[z]]["v"][1] for z in (12, 14, 16)) / 3 - 1
+    assert e6["CONTRIB"] < 0, "narrative: the quoted order loses money even at the smaller E-flute gap"
+    assert pc_alt["C1"]["CONTRIB"] < 0 and abs(pc_rep["C1"]["CM"]) < 0.02, "narrative: at market averages the quoted order loses on a first shipment, breaks even on a repeat"
     # geometry
     geo = {}
     for k in I.SKUS:
@@ -415,8 +425,16 @@ def report():
         mrows.append([f"{c} ({NOM[c]})", k["bench_flute"], *[usd(x, 3) for x in vals]])
     w("\n**Achievable wholesale price.** This is the most a container-lot buyer could pay and still resell at the observed listing price:\n\n"
       "Achievable price = listing × (1 − E-flute discount, applied only to B-flute listings) × (1 − buyer's resale margin).\n\n"
-      "The 20% E-flute discount is derived from WebstaurantStore's own E-flute vs B-flute 12\" prices ($15.99 against $19.99) [S074][S075]. The buyer's resale margin is ASSUMED at 20/25/30%.\n")
+      "The 20% E-flute discount is derived from WebstaurantStore's own E-flute vs B-flute 12\" prices ($15.99 against $19.99) [S074][S075]. "
+      f"A later search summary showed $16.99 for the B-flute box (probably the white version) [S102]; at that {pct(e6_disc, 0)} gap the quoted order would lose {usd(-e6['CONTRIB'], 0)} instead of "
+      f"{usd(-b['CONTRIB'], 0)}, so the verdict does not depend on it. The buyer's resale margin is ASSUMED at 20/25/30%.\n")
     w(table(["SKU", "Benchmark listing flute", "LOW", "BASE", "STRESS"], mrows))
+    w(f"\n**What US pizzerias pay (price check, 16 Oct 2026).** {len(pc_rows)} listings from {len({r['seller'] for r in pc_rows})} sellers [S102]. "
+      "Regular case-of-50 prices average " + ", ".join(f"{z}\" {usd(pcs[z]['mean'], 2)}" for z in (12, 14, 16)) + " a box, "
+      f"about {pct(pc_up, 0)} above the BASE listings, which use the cheapest online prices. At those averages, with every cost, the E-flute discount and the buyer margin unchanged, "
+      f"the quoted order still loses {usd(-pc_alt['C1']['CONTRIB'], 0)} on a first shipment and about breaks even on a repeat ({usd(pc_rep['C1']['CONTRIB'], 0)}); a full 40' HC of 16\" boxes "
+      f"reaches {pct(pc_alt['C6']['GM'])} GM, and {pct(pc_rep['C6']['CM'])} CM on a repeat shipment. BASE inputs are not changed: these are single-case asking prices that a "
+      "container-lot buyer would expect to undercut, so the averages are an upside case for the buyer quotes to confirm. Detail: `working/03_us_pizza_box_price_check.md`.\n")
     par_box = (ldp_lb * b["kg"] / 0.45359237 + b["DELIV"] + b["UNLOAD"]) / b["SALE"]
     w(f"\n**Import-parity cross-check.** The pizza-box AD/CVD petition reports 92.4 million lb of subject imports with a landed duty-paid value of $68.3 million in 2025, about **${ldp_lb:.3f}/lb** [S099]. "
       f"BigBoxPizza's quoted order would land, cleared at the port, at **${clear_lb:.3f}/lb**. That is no better than imports the US industry calls dumped, and it still excludes delivery, selling costs and margin. "

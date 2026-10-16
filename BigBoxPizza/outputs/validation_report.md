@@ -2,7 +2,7 @@
 
 Status: **PASS**
 
-- Source workbook: `_build_formulas.xlsx`; recalculated with LibreOffice (headless, UNO calculateAll) in 2.4 s → `BigBoxPizza_US_Landed_Cost_Model.xlsx`
+- Source workbook: `_build_formulas.xlsx`; recalculated with LibreOffice (headless, UNO calculateAll) in 2.6 s → `BigBoxPizza_US_Landed_Cost_Model.xlsx`
 - Worksheets: 27 (Executive Dashboard, Read Me & Instructions, Product & SKU Master, Supplier Quotation, Technical Specifications, Exchange Rates, Container Specifications, Loading Geometry, Shipment Configuration, Origin Costs, Ocean Freight, U.S. Port & Customs, Destination Delivery, Tariffs & Customs Value, Landed Cost by SKU, Pricing & Margin, Container Profitability, Sensitivity Analysis, Scenario Comparison, Cash Flow & Working Capital, Competitor Benchmark, Risk Register, Assumptions Register, Source Register, Quote Requests & Missing Data, Calc Engine, Model Checks)
 - Missing required worksheets: none
 - Formula cells: 30,785

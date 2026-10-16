@@ -92,6 +92,7 @@ Each line: source ID – what was found. Full fields in `BigBoxPizza_Source_Regi
 - **S099** U.S. Opens Probe Into Pizza Box Imports / Petition summary (volumes and landed duty-paid values) (Paper Advance; International Trade Insights (petition summary); 2026-09/10) – Subject imports 40.2 million lb (2023) -> 92.4 million lb (2025); landed duty-paid value $33.2m -> $68.3m; +46% H1-2026 vs H1-2025
 - **S100** New AD/CVD petitions on corrugated pizza boxes from China, Malaysia and Türkiye (law-firm alerts) (Faegre Drinker; Clark Hill; 2026-09) – AD on all three; CVD on Türkiye; ITC preliminary vote ~23-26 Oct 2026; final determinations likely late 2027
 - **S101** HTS 4823.90.86 and 4808.10.00 general rates (tariff mirrors) (Unisco / Wove / USTariffRates mirrors of USITC HTS; 2026) – 4823.90.86 (other articles of paper) General: Free; 4808.10.00 (corrugated paper and paperboard) General: Free
+- **S102** US pizza-box case prices: October 2026 price check (65 listings, 28 sellers) (BigBoxPizza research team (compiled from search-result extracts); 2026-10-16) – Regular case-of-50 averages $0.44 (12"), $0.57 (14"), $0.64 (16") per box; cheapest regular $0.32 / $0.38 / $0.47; best bulk or sale $0.30 / $0.34 / $0.39
 
 ## Searches that returned no usable evidence (recorded so they are not repeated blindly)
 

@@ -268,13 +268,16 @@ Drayage covers linehaul, a fuel surcharge (20%), tolls, 2 chassis days and 2 hou
 
 Achievable price = listing × (1 − E-flute discount, applied only to B-flute listings) × (1 − buyer's resale margin).
 
-The 20% E-flute discount is derived from WebstaurantStore's own E-flute vs B-flute 12" prices ($15.99 against $19.99) [S074][S075]. The buyer's resale margin is ASSUMED at 20/25/30%.
+The 20% E-flute discount is derived from WebstaurantStore's own E-flute vs B-flute 12" prices ($15.99 against $19.99) [S074][S075]. A later search summary showed $16.99 for the B-flute box (probably the white version) [S102]; at that 6% gap the quoted order would lose $5,733 instead of $7,383, so the verdict does not depend on it. The buyer's resale margin is ASSUMED at 20/25/30%.
 
 | SKU | Benchmark listing flute | LOW | BASE | STRESS |
 |---|---|---|---|---|
 | 3464 (14") | B | $0.286 | $0.234 | $0.200 |
 | 3463 (16") | B | $0.313 | $0.270 | $0.236 |
 | 3460 (12") | E | $0.256 | $0.225 | $0.210 |
+
+**What US pizzerias pay (price check, 16 Oct 2026).** 65 listings from 28 sellers [S102]. Regular case-of-50 prices average 12" $0.44, 14" $0.57, 16" $0.64 a box, about 45% above the BASE listings, which use the cheapest online prices. At those averages, with every cost, the E-flute discount and the buyer margin unchanged, the quoted order still loses $2,544 on a first shipment and about breaks even on a repeat ($23); a full 40' HC of 16" boxes reaches 25.4% GM, and 15.9% CM on a repeat shipment. BASE inputs are not changed: these are single-case asking prices that a container-lot buyer would expect to undercut, so the averages are an upside case for the buyer quotes to confirm. Detail: `working/03_us_pizza_box_price_check.md`.
+
 
 **Import-parity cross-check.** The pizza-box AD/CVD petition reports 92.4 million lb of subject imports with a landed duty-paid value of $68.3 million in 2025, about **$0.739/lb** [S099]. BigBoxPizza's quoted order would land, cleared at the port, at **$0.699/lb**. That is no better than imports the US industry calls dumped, and it still excludes delivery, selling costs and margin. Applied to the quoted mix's weight and adding delivery to the buyer, that import price is about $0.311/box, 28% above the benchmark (before any importer margin). Even pricing 25% above the benchmark gives only +2.8% GM and −22.3% CM on the quoted order.
 
@@ -530,7 +533,7 @@ Recommended instead, a **paper pilot over 4–6 weeks**, costing about the model
 
 ## 20. Sources and appendices
 
-**Source register:** 90 sources in `BigBoxPizza_Source_Register.csv`; the workbook's Source Register sheet has the same content. Evidence classes: ESTIMATED 16, UNRESOLVED 4, VERIFIED_MARKET 41, VERIFIED_OFFICIAL 27, VERIFIED_QUOTE 1, VERIFIED_SUPPLIER 1. The most decision-relevant sources:
+**Source register:** 91 sources in `BigBoxPizza_Source_Register.csv`; the workbook's Source Register sheet has the same content. Evidence classes: ESTIMATED 16, UNRESOLVED 4, VERIFIED_MARKET 42, VERIFIED_OFFICIAL 27, VERIFIED_QUOTE 1, VERIFIED_SUPPLIER 1. The most decision-relevant sources:
 - [S001] NFC Price Offer NFC-OFFER-2026-0120 (1-page image PDF) — Nile Factory Carton (NFC), 6th of October City, Giza — BigBoxPizza/evidence/NFC-OFFER-2026-0120_original.pdf (VERIFIED_QUOTE; High (document authenticity not independently verified))
 - [S014] USTR Notice of Final Action - Section 301 investigations of 60 economies (forced labor import bans) [FRN 7-23-26] — Office of the U.S. Trade Representative — https://ustr.gov/sites/default/files/files/Press/Releases/2026/FLIP%20301%20Investigation%20Final%20Action%20FRN%207-23-26%20FINAL.pdf (VERIFIED_OFFICIAL; High (rate); Medium (product coverage of 4819.10))
 - [S015] Federal Register doc. 2026-15274 / 2026-15181 - Actions by the United States in the Section 301 investigations of 60 economies (forced labor) — Federal Register / USTR — https://www.federalregister.gov/documents/2026/07/28/2026-15274/actions-by-the-united-states-in-the-investigations-under-section-301-of-the-trade-act-of-1974-of-the (VERIFIED_OFFICIAL; High)

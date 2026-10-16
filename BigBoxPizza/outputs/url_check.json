@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-16T01:14:06Z",
+ "checked_at": "2026-10-16T13:00:20Z",
  "rows": [
   {
    "id": "S001",
@@ -718,6 +718,13 @@
    "result": "blocked_by_policy",
    "code": null,
    "detail": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+   "id": "S102",
+   "url": "BigBoxPizza/data/us_pizza_box_prices_2026-10-16.csv",
+   "host": "(local file)",
+   "result": "local_file_ok",
+   "code": null
   }
  ]
 }

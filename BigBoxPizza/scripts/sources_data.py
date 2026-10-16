@@ -557,4 +557,11 @@ SOURCES += [
          pub_date="2026", access_date=ACC2, method=METHOD_SEARCH,
          extract="4823.90.86 (other articles of paper) General: Free; 4808.10.00 (corrugated paper and paperboard) General: Free",
          claim="Alternative classifications are also MFN Free, so classification risk does not change ordinary duty", ptype="Secondary (mirror)", evidence="VERIFIED_MARKET", confidence="Medium", limitation="Mirror sites"),
+    dict(id="S102", title="US pizza-box case prices: October 2026 price check (65 listings, 28 sellers)",
+         org="BigBoxPizza research team (compiled from search-result extracts)", url="BigBoxPizza/data/us_pizza_box_prices_2026-10-16.csv",
+         pub_date="2026-10-16", access_date=ACC2, method=METHOD_SEARCH,
+         extract="Regular case-of-50 averages $0.44 (12\"), $0.57 (14\"), $0.64 (16\") per box; cheapest regular $0.32 / $0.38 / $0.47; best bulk or sale $0.30 / $0.34 / $0.39",
+         claim="What US pizzerias pay per box, by size and buying channel; basis of the market-average what-if", ptype="Market listings (compiled)", evidence="VERIFIED_MARKET",
+         confidence="Medium", limitation="Single-case asking prices read from search-result extracts (pages not opened); container-lot buyers pay less; "
+                                         "two snapshots of the 12\" WebstaurantStore B-flute listing disagree ($19.99 vs $16.99)"),
 ]
