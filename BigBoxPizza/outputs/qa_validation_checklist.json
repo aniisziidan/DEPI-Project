@@ -141,7 +141,7 @@
    "group": "Deliverables",
    "item": "All required files exist",
    "status": "PASS",
-   "evidence": "BigBoxPizza_US_Market_and_Landed_Cost_Report.md (59 KB); BigBoxPizza_US_Landed_Cost_Model.xlsx (1,028 KB); BigBoxPizza_Source_Register.csv (55 KB); BigBoxPizza_Assumptions_and_Gaps.md (31 KB); BigBoxPizza_RFQ_Pack.md (14 KB); BigBoxPizza_Calculation_Audit.md (11 KB); scripts/ with 17 Python files (build_all.py rebuilds everything)."
+   "evidence": "BigBoxPizza_US_Market_and_Landed_Cost_Report.md (60 KB); BigBoxPizza_US_Landed_Cost_Model.xlsx (1,029 KB); BigBoxPizza_Source_Register.csv (55 KB); BigBoxPizza_Assumptions_and_Gaps.md (31 KB); BigBoxPizza_RFQ_Pack.md (14 KB); BigBoxPizza_Calculation_Audit.md (11 KB); scripts/ with 18 Python files (build_all.py rebuilds everything)."
   },
   {
    "group": "Deliverables",

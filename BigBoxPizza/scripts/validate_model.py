@@ -142,7 +142,7 @@ def main(src, dst, report):
     rows, base, sens, combos = E.run_all()
     for r in rows:
         py[(r["s"] + 1) * 1000 + (r["ci"] + 1) * 10 + (r["di"] + 1)] = r
-    for i, (label, r) in enumerate(sens, 1):
+    for i, (label, r) in enumerate(E.sensitivity_rows(E.WB_DEFAULT), 1):  # the workbook's SENS rows follow its dashboard selection
         py[900000 + i] = r
     for i, (label, r) in enumerate(combos, 1):
         py[950000 + i] = r

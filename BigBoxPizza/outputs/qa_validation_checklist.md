@@ -1,6 +1,6 @@
 # QA validation checklist (brief §21)
 
-Run: 2026-10-16 13:00 UTC by `scripts/qa_checklist.py` (also the last step of `build_all.py`). Valuation date 2026-10-16.
+Run: 2026-10-16 13:13 UTC by `scripts/qa_checklist.py` (also the last step of `build_all.py`). Valuation date 2026-10-16.
 
 **Overall: PASS with limitations** – PASS 26, LIMITED 3 of 29 items.
 
@@ -47,7 +47,7 @@ Status key: PASS = checked and correct; LIMITED = no defect found, but the check
 
 | # | Check | Status | Evidence |
 |---|---|---|---|
-| D1 | All required files exist | **PASS** | BigBoxPizza_US_Market_and_Landed_Cost_Report.md (59 KB); BigBoxPizza_US_Landed_Cost_Model.xlsx (1,028 KB); BigBoxPizza_Source_Register.csv (55 KB); BigBoxPizza_Assumptions_and_Gaps.md (31 KB); BigBoxPizza_RFQ_Pack.md (14 KB); BigBoxPizza_Calculation_Audit.md (11 KB); scripts/ with 17 Python files (build_all.py rebuilds everything). |
+| D1 | All required files exist | **PASS** | BigBoxPizza_US_Market_and_Landed_Cost_Report.md (60 KB); BigBoxPizza_US_Landed_Cost_Model.xlsx (1,029 KB); BigBoxPizza_Source_Register.csv (55 KB); BigBoxPizza_Assumptions_and_Gaps.md (31 KB); BigBoxPizza_RFQ_Pack.md (14 KB); BigBoxPizza_Calculation_Audit.md (11 KB); scripts/ with 18 Python files (build_all.py rebuilds everything). |
 | D2 | Excel workbook reopened and inspected | **PASS** | Reopened with openpyxl (formulas and cached values): 27 sheets, 30,785 formula cells, all with cached values after the LibreOffice 24.2.7.2 recalculation (0 missing; formulas returning an empty text are not counted); 0 error values; 423 defined names. |
 | D3 | Worksheet names and formulas checked | **PASS** | All 25 required sheet names present verbatim and in the brief's order, plus Calc Engine and Model Checks. Calculation sheets are formula-driven (Loading Geometry 1,089, Shipment Configuration 2,672, Landed Cost by SKU 213, Pricing & Margin 100, Container Profitability 212, Sensitivity Analysis 277, Scenario Comparison 290, Cash Flow & Working Capital 45, Calc Engine 25,011, Model Checks 25, Executive Dashboard 115 formula cells); inputs sit in LOW/BASE/STRESS input tables with named ranges; scenario/configuration/destination selectors drive every view. |
 | D4 | Source register CSV validated | **PASS** | UTF-8, RFC-4180 quoting, 91 rows × 13 columns, 91 unique IDs, every evidence class one of the eight allowed labels. All 89 source IDs cited in the Markdown deliverables exist in the register. |

@@ -322,7 +322,13 @@ def combo_cases():
     ]
 
 
-SEL_DEFAULT = dict(s=1, ci=0, di=0)  # BASE, C1 quoted 60k in 40HC, D1 NY/NJ→Edison
+SEL_DEFAULT = dict(s=1, ci=0, di=0)  # BASE, C1 quoted 60k in 40HC, D1 NY/NJ→Edison: the base case of the written reports
+WB_DEFAULT = dict(s=1, ci=3, di=0)  # the workbook dashboard opens on C4, the client's plan: a full 40' HC, equal numbers of each size
+
+
+def sensitivity_rows(sd):
+    """One-at-a-time sensitivity results for a selection dict(s, ci, di)."""
+    return [(label, compute(sd["s"], sd["ci"], sd["di"], ov)) for label, ov in sensitivity_cases(sd["s"])]
 
 
 def run_all():
@@ -331,11 +337,9 @@ def run_all():
         for ci in range(len(I.CONFIGS)):
             for di in range(len(I.DESTINATIONS)):
                 rows.append(compute(s, ci, di))
-    sens = []
     sd = SEL_DEFAULT
     base = compute(sd["s"], sd["ci"], sd["di"])
-    for label, ov in sensitivity_cases(sd["s"]):
-        sens.append((label, compute(sd["s"], sd["ci"], sd["di"], ov)))
+    sens = sensitivity_rows(sd)
     combos = [(label, compute(1, ci, sd["di"], ov)) for label, ci, ov in combo_cases()]
     return rows, base, sens, combos
 

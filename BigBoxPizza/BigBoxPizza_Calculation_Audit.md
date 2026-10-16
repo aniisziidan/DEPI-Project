@@ -118,7 +118,7 @@ Model Checks sheet after recalculation:
 | US duty/fees ledger = engine | OK |
 | Delivery & disruption ledger = engine | OK |
 | SKU allocation table total = engine COGS | OK |
-| Supplier quotation reconciles to shipment value (when units = quoted mix) | OK – reconciles |
+| Supplier quotation reconciles to shipment value (when units = quoted mix) | n/a – configuration differs from quoted mix |
 | Customs value build-up = engine customs value | OK |
 | Double-count flag: origin THC not also in ocean freight | OK – THC charged once (ocean estimate excludes OTHC) |
 | Double-count flag: CFC / insurance / chassis / unloading | OK – flags set (each item once) |

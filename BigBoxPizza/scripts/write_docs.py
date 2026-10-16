@@ -96,6 +96,8 @@ def rfq_pack():
     r3 = [E.compute(s, 0, 0) for s in range(3)]
     eq_hc = LM.best_equal_mix(LM.container_by_key("40HC"), 1)
     full4 = {c: round(u, -3) for c, u in full.items()}
+    fmix = LM.config_feasibility(I.CONFIGS[3], 1)  # the plan: full 40' HC, equal numbers of each size (C4)
+    rmix = E.compute(1, 3, 0)
     L = []
     w = L.append
     w("# BigBoxPizza – Supplier and Logistics RFQ Pack\n")
@@ -110,8 +112,9 @@ def rfq_pack():
     w("**1. Products** (please confirm or correct every value):\n")
     w(table(["Our code", "Your code", "Description on your offer", "Size on offer (mm)", "Nominal pizza size", "Board on offer"], [
         [f"BBP-{NOM[k['code']].strip(chr(34))}", k["code"], k["desc_ar"], f"{k['L']}×{k['W']}×{k['H']}", NOM[k["code"]], "SINGLE-E (UNCONFIRMED)"] for k in I.SKUS], align="llllll"))
-    w("\n**2. Quantities to price separately:** (a) 60,000 pcs, 20,000 of each size, in one shipment; (b) a full 40' high-cube of one size only (please state the quantity per size); "
-      "(c) a full 40' high-cube with equal quantities of the three sizes; (d) a 20' container trial; (e) your minimum order quantity per size.\n")
+    w(f"\n**2. Quantities to price separately:** (a) **our planned order:** a full 40' high-cube with equal quantities of the three sizes "
+      f"(our estimate is about {eq_hc:,} of each, {3 * eq_hc:,} in total; please confirm how many fit); (b) 60,000 pcs, 20,000 of each size, as in your offer; "
+      "(c) a full 40' high-cube of one size only (please state the quantity per size); (d) a 20' container trial; (e) your minimum order quantity per size.\n")
     w("**3. Prices requested** (per 1,000 pcs, in USD *and* EGP, excluding VAT):")
     w("- **FCA your factory, Incoterms 2020**: export-cleared and loaded into our forwarder's container, with your company as exporter of record;")
     w("- **EXW**, for comparison;")
@@ -127,7 +130,7 @@ def rfq_pack():
     w("\n**5. Packing and loading data (mandatory):**")
     for t in ["Blanks per bundle; bundle dimensions (L×W×H mm) and gross weight; strapping/wrap material; moisture protection.",
               "Palletisation option: pallet size, bundles per pallet, pallet height and weight, ISPM-15 heat-treated pallets.",
-              "Container load plan with pcs per 20', 40' and 40' HC for each size and for the mixed 60,000 order; floor-loaded vs palletised; loading time at your factory.",
+              "Container load plan with pcs per 20', 40' and 40' HC for each size, for a full 40' HC with equal quantities of the three sizes, and for the mixed 60,000 order; floor-loaded vs palletised; loading time at your factory.",
               "'Made in Egypt' marking on every bundle wrap / outer pack."]:
         w(f"- {t}")
     w("\n**6. Compliance documents (mandatory for a US food-contact product):**")
@@ -160,8 +163,10 @@ def rfq_pack():
     w(table(["Item", "Detail"], [
         ["Commodity", "Flat-packed (unassembled) corrugated paperboard pizza boxes, HS 4819.10, non-hazardous, food-contact packaging (empty)"],
         ["Pick-up", "Nile Factory Carton, 199 6th Ext. Industrial Zone, 6th of October City, Giza (FCA factory – shipper loads); or the alternative supplier's factory"],
-        ["Cargo (quoted order, provisional)", f"60,000 pcs in about 1,200 bundles, ≈{kg60 / 1000:.1f} t gross and ≈{vol60:.0f} m³ of bundles; floor-loaded (please also price palletised)"],
-        ["Scenarios", f"A) 60,000 mix in 1×40' HC; B) full 40' HC single size (about {min(full.values()):,}–{max(full.values()):,} pcs, up to ≈{kgfull / 1000:.1f} t); C) 1×40' GP; D) 1×20' GP; "
+        ["Cargo (planned, provisional)", f"A full 40' HC: about {3 * eq_hc:,} pcs ({eq_hc:,} of each size) in about {3 * eq_hc // 50:,} bundles, ≈{fmix['kg'] / 1000:.1f} t gross and ≈{fmix['vol']:.0f} m³ of bundles; "
+                                         "floor-loaded (please also price palletised)"],
+        ["Scenarios", f"A) full 40' HC, equal mix of the three sizes (the plan); A2) the quoted 60,000 mix in 1×40' HC (≈{kg60 / 1000:.1f} t, ≈{vol60:.0f} m³); "
+                      f"B) full 40' HC single size (about {min(full.values()):,}–{max(full.values()):,} pcs, up to ≈{kgfull / 1000:.1f} t); C) 1×40' GP; D) 1×20' GP; "
                       f"E) LCL about 10,000 pcs (≈{lclf['vol']:.1f} m³ of bundles, ≈{lclf['kg'] / 1000:.1f} t)"],
         ["Ports of loading", "Alexandria / Dekheila / Damietta – recommend the best service"],
         ["Destinations (port)", "New York/New Jersey, Baltimore, Norfolk, Savannah"],
@@ -186,7 +191,8 @@ def rfq_pack():
         ["Product", "Die-cut, scored, unassembled corrugated paperboard pizza boxes (single-wall, believed E-flute – to be confirmed), plain kraft, no printing (to be confirmed); for packing hot pizza (food contact)"],
         ["Sizes", "305×305×50, 355×355×50, 405×405×50 mm (inside/outside unconfirmed)"],
         ["Origin / manufacturer", "Egypt – Nile Factory Carton, 6th of October City (or an alternative Egyptian converter)"],
-        ["Value", f"≈ USD {r3[0]['SUP'] / r3[0]['U']:.3f}–{r3[2]['SUP'] / r3[2]['U']:.3f} per box ex-factory (BASE {r3[1]['SUP'] / r3[1]['U']:.3f}); ≈ USD {r3[1]['SUP']:,.0f} per 60,000-box shipment (BASE)"],
+        ["Value", f"≈ USD {r3[0]['SUP'] / r3[0]['U']:.3f}–{r3[2]['SUP'] / r3[2]['U']:.3f} per box ex-factory (BASE {r3[1]['SUP'] / r3[1]['U']:.3f}); ≈ USD {rmix['SUP']:,.0f} per planned full-container shipment "
+                  f"of {rmix['U']:,.0f} boxes (≈ USD {r3[1]['SUP']:,.0f} for the quoted 60,000)"],
         ["Terms", "FCA factory (preferred) or EXW; ocean to NY/NJ (also Baltimore, Norfolk, Savannah)"],
         ["Documents available", "Supplier quotation (expired); specifications pending (will be sent)"],
     ], align="ll"))
@@ -368,7 +374,7 @@ def readme(val):
 | Evidence | `evidence/` – original NFC quotation PDF (SHA-256 ecfdf33b…f91b0), page render, verbatim transcription |
 | Outputs | `outputs/` – charts, loading schematics, `validation_report.md` (workbook recalculation), `qa_validation_checklist.md` (formal QA, brief §21), `url_check.json` (source URL check) |
 | US price check data | `data/us_pizza_box_prices_2026-10-16.csv` – 65 US pizza-box case prices from 28 sellers (16 Oct 2026), source S102 |
-| Working notes | `working/` – capability audit, project plan, research log, US pizza-box price check (`03_us_pizza_box_price_check.md`) |
+| Working notes | `working/` – capability audit, project plan, research log, US pizza-box price check (`03_us_pizza_box_price_check.md`), full-container plan (`04_full_container_plan.md`) |
 
 Workbook validation: {val.get('status', 'n/a')} – {val.get('formula_cells_total', 0):,} formula cells, {val.get('error_count', 'n/a')} errors, {val.get('engine_rows_compared', 'n/a')} engine cases equal to the independent Python engine.
 

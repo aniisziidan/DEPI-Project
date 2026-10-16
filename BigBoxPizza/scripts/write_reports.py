@@ -6,6 +6,7 @@ import os
 import charts as CH
 import engine as E
 import inputs as I
+import full_container as FC
 import loading_model as LM
 import price_check as PC
 import registers as R
@@ -117,6 +118,9 @@ def report():
     pc_up = sum(pcs[z]["mean"] / I.MARKET["listing"][PC.SIZE_SKU[z]]["v"][1] for z in (12, 14, 16)) / 3 - 1
     assert e6["CONTRIB"] < 0, "narrative: the quoted order loses money even at the smaller E-flute gap"
     assert pc_alt["C1"]["CONTRIB"] < 0 and abs(pc_rep["C1"]["CM"]) < 0.02, "narrative: at market averages the quoted order loses on a first shipment, breaks even on a repeat"
+    fc = FC.results()  # the client's plan: a full 40' HC with equal numbers of each size (C4)
+    f4 = fc["c4"][1]
+    mix_spread = max(m["r"]["CONTRIB"] for m in fc["mixes"]) - min(m["r"]["CONTRIB"] for m in fc["mixes"])
     # geometry
     geo = {}
     for k in I.SKUS:
@@ -180,6 +184,15 @@ def report():
     w("4. **Several facts that are prerequisites for any shipment are missing.** The quote has expired and states no Incoterm. NFC's identity and bank beneficiary could not be verified "
       "(no independent public record was found [S088]). The board specification and food-contact/PFAS documentation are absent. "
       "\"SINGLE-E\" 14\" and 16\" boxes are lighter than the US B-flute norm for those sizes [S073][S082], and it is unclear whether the quoted dimensions are inside or outside measurements.\n")
+    u4 = {sc: E.config_units(3, sc) for sc in range(3)}
+    w(f"**The client's plan: a full 40' high-cube of all three sizes (configuration C4).** The client intends to fill the container rather than ship the quoted 60,000 boxes. "
+      f"The largest equal mix that fits is {u4[1]['3460']:,} of each size ({f4['U']:,.0f} boxes, {fc['load'][1]['tot_kg'] / 1000:.1f} t) in the BASE case, "
+      f"{sum(u4[2].values()):,} if bundles are thicker (STRESS) and {sum(u4[0].values()):,} if thinner (LOW). Delivered cost falls to {usd(f4['avg_cpb'], 3)}/box while the buyer price stays "
+      f"{usd(f4['avg_price'], 3)}: gross margin {pct(f4['GM'])}, contribution {usd(f4['CONTRIB'], 0)} ({pct(f4['CM'])}) on the first shipment and {usd(fc['c4_rep']['CONTRIB'], 0)} on a repeat, "
+      f"with peak cash of {usd(f4['PEAK'], 0)}. Breaking even needs buyer prices {pct(f4['f_be'] - 1, 0)} higher, or a factory price {pct(-f4['chg_gm_0'], 0)} lower to cover the delivered cost. "
+      f"At the average US case prices of [S102] it about breaks even on the first shipment ({usd(fc['avg']['CONTRIB'], 0)}) and makes {usd(fc['avg_rep']['CONTRIB'], 0)} "
+      f"({pct(fc['avg_rep']['CM'])}) on a repeat, short of the 12% minimum. Changing the size mix moves the middle-case result by under {usd(math.ceil(mix_spread / 100) * 100, 0)} "
+      "(`working/04_full_container_plan.md`). The verdict does not change.\n")
     w("**What would have to change before re-opening the file (re-entry conditions; all are needed together, see §18–19):**")
     w(f"- Written buyer offers for container lots that clear the break-even prices in §13: about **{usd(b['avg_price'] * b['f_be'], 3)}/box** for the quoted mix, or about **{usd(c7['avg_price'] * c7['f_be'], 3)}/box** for full containers of 12\" boxes.")
     w(f"- A dated NFC re-quote on FCA terms, zero-rated for VAT, at or below the maximum prices in §16. For a full 40' HC of 12\" boxes and a 25% gross margin that maximum is **EGP {mx25_full['3460']:.2f}/box**, against EGP 6.90 quoted.")

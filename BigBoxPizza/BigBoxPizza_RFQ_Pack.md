@@ -22,7 +22,7 @@ Thank you for offer NFC-OFFER-2026-0120 of 23 September 2026. It expired on 30 S
 | BBP-16 | 3463 | علبة بيتزا 5*40.5*40.5 | 405×405×50 | 16" | SINGLE-E (UNCONFIRMED) |
 | BBP-12 | 3460 | بيتزا 5*30.5*30.5 | 305×305×50 | 12" | SINGLE-E (UNCONFIRMED) |
 
-**2. Quantities to price separately:** (a) 60,000 pcs, 20,000 of each size, in one shipment; (b) a full 40' high-cube of one size only (please state the quantity per size); (c) a full 40' high-cube with equal quantities of the three sizes; (d) a 20' container trial; (e) your minimum order quantity per size.
+**2. Quantities to price separately:** (a) **our planned order:** a full 40' high-cube with equal quantities of the three sizes (our estimate is about 25,800 of each, 77,400 in total; please confirm how many fit); (b) 60,000 pcs, 20,000 of each size, as in your offer; (c) a full 40' high-cube of one size only (please state the quantity per size); (d) a 20' container trial; (e) your minimum order quantity per size.
 
 **3. Prices requested** (per 1,000 pcs, in USD *and* EGP, excluding VAT):
 - **FCA your factory, Incoterms 2020**: export-cleared and loaded into our forwarder's container, with your company as exporter of record;
@@ -40,7 +40,7 @@ Please state whether the invoice to a foreign buyer is VAT zero-rated as an expo
 **5. Packing and loading data (mandatory):**
 - Blanks per bundle; bundle dimensions (L×W×H mm) and gross weight; strapping/wrap material; moisture protection.
 - Palletisation option: pallet size, bundles per pallet, pallet height and weight, ISPM-15 heat-treated pallets.
-- Container load plan with pcs per 20', 40' and 40' HC for each size and for the mixed 60,000 order; floor-loaded vs palletised; loading time at your factory.
+- Container load plan with pcs per 20', 40' and 40' HC for each size, for a full 40' HC with equal quantities of the three sizes, and for the mixed 60,000 order; floor-loaded vs palletised; loading time at your factory.
 - 'Made in Egypt' marking on every bundle wrap / outer pack.
 
 **6. Compliance documents (mandatory for a US food-contact product):**
@@ -86,8 +86,8 @@ Please quote itemised all-in costs for the shipments below. We need every charge
 |:---|:---|
 | Commodity | Flat-packed (unassembled) corrugated paperboard pizza boxes, HS 4819.10, non-hazardous, food-contact packaging (empty) |
 | Pick-up | Nile Factory Carton, 199 6th Ext. Industrial Zone, 6th of October City, Giza (FCA factory – shipper loads); or the alternative supplier's factory |
-| Cargo (quoted order, provisional) | 60,000 pcs in about 1,200 bundles, ≈10.3 t gross and ≈43 m³ of bundles; floor-loaded (please also price palletised) |
-| Scenarios | A) 60,000 mix in 1×40' HC; B) full 40' HC single size (about 66,850–106,400 pcs, up to ≈14.6 t); C) 1×40' GP; D) 1×20' GP; E) LCL about 10,000 pcs (≈7.2 m³ of bundles, ≈1.7 t) |
+| Cargo (planned, provisional) | A full 40' HC: about 77,400 pcs (25,800 of each size) in about 1,548 bundles, ≈13.3 t gross and ≈55 m³ of bundles; floor-loaded (please also price palletised) |
+| Scenarios | A) full 40' HC, equal mix of the three sizes (the plan); A2) the quoted 60,000 mix in 1×40' HC (≈10.3 t, ≈43 m³); B) full 40' HC single size (about 66,850–106,400 pcs, up to ≈14.6 t); C) 1×40' GP; D) 1×20' GP; E) LCL about 10,000 pcs (≈7.2 m³ of bundles, ≈1.7 t) |
 | Ports of loading | Alexandria / Dekheila / Damietta – recommend the best service |
 | Destinations (port) | New York/New Jersey, Baltimore, Norfolk, Savannah |
 | Destinations (door, live unload) | Edison NJ 08837; Bronx NY 10474; Jessup MD 20794; Richmond VA 23230; Atlanta GA 30336 |
@@ -123,7 +123,7 @@ We are evaluating imports of empty, flat-packed corrugated pizza boxes made in E
 | Product | Die-cut, scored, unassembled corrugated paperboard pizza boxes (single-wall, believed E-flute – to be confirmed), plain kraft, no printing (to be confirmed); for packing hot pizza (food contact) |
 | Sizes | 305×305×50, 355×355×50, 405×405×50 mm (inside/outside unconfirmed) |
 | Origin / manufacturer | Egypt – Nile Factory Carton, 6th of October City (or an alternative Egyptian converter) |
-| Value | ≈ USD 0.134–0.176 per box ex-factory (BASE 0.146); ≈ USD 8,779 per 60,000-box shipment (BASE) |
+| Value | ≈ USD 0.134–0.176 per box ex-factory (BASE 0.146); ≈ USD 11,325 per planned full-container shipment of 77,400 boxes (≈ USD 8,779 for the quoted 60,000) |
 | Terms | FCA factory (preferred) or EXW; ocean to NY/NJ (also Baltimore, Norfolk, Savannah) |
 | Documents available | Supplier quotation (expired); specifications pending (will be sent) |
 

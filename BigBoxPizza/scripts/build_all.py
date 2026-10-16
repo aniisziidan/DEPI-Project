@@ -10,7 +10,8 @@ Steps
     → outputs/validation_report.md / .json
  4. Source register CSV (build_source_register.py)
  5. Markdown deliverables (write_reports.py, write_docs.py) and the US pizza-box price check
-    (price_check.py → working/03_us_pizza_box_price_check.md, from data/us_pizza_box_prices_2026-10-16.csv)
+    (price_check.py → working/03_us_pizza_box_price_check.md, from data/us_pizza_box_prices_2026-10-16.csv) and the
+    full-container plan (full_container.py → working/04_full_container_plan.md)
  6. QA validation checklist, brief §21 (qa_checklist.py) → outputs/qa_validation_checklist.md
     (check_urls.py is network-dependent and run separately; its last result is read from outputs/url_check.json)
 No hidden state: every step reads only inputs.py, sources_data.py, registers.py, the evidence folder and the data folder.
@@ -26,6 +27,7 @@ sys.path.insert(0, HERE)
 import build_model  # noqa: E402
 import build_source_register  # noqa: E402
 import charts  # noqa: E402
+import full_container  # noqa: E402
 import price_check  # noqa: E402
 import qa_checklist  # noqa: E402
 import validate_model  # noqa: E402
@@ -54,6 +56,7 @@ def main():
     print("    ", build_source_register.validate(csvp))
     print("5/6 Markdown deliverables")
     price_check.main()
+    full_container.main()
     write_reports.main(PROJ)
     write_docs.main(PROJ)
     print("6/6 QA validation checklist")

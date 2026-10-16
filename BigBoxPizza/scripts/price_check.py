@@ -8,6 +8,7 @@ prices of plain or stock-print boxes from mainstream sellers; premium, custom-pr
 kept for the record but left out of the averages. The what-if re-runs the cost engine with the model's BASE listing
 prices replaced by the market averages; it does not change inputs.py.
 """
+import contextlib
 import csv
 import os
 import statistics as st
@@ -47,9 +48,9 @@ def stats(rows):
     return out
 
 
-def what_if(s):
-    """Engine re-run with BASE listing prices set to the market averages (12" scaled to E-flute, as in the model)."""
-    base = {k: E.compute(1, ci, 0) for k, ci in (("C1", 0), ("C4", 3), ("C5", 4), ("C6", 5), ("C7", 6))}
+@contextlib.contextmanager
+def market_average(s):
+    """Temporarily set the BASE listing prices to the market averages (12" scaled to E-flute, as in the model)."""
     edisc = I.MARKET["eflute_disc"]["v"][1]
     keep = {k: I.MARKET["listing"][k]["v"] for k in I.MARKET["listing"]}
     new = {"3464": s[14]["mean"], "3463": s[16]["mean"], "3460": s[12]["mean"] * (1 - edisc)}
@@ -57,11 +58,19 @@ def what_if(s):
         for k, v in new.items():
             lo, _, hi = keep[k]
             I.MARKET["listing"][k]["v"] = (lo, v, hi)
-        alt = {k: E.compute(1, ci, 0) for k, ci in (("C1", 0), ("C4", 3), ("C5", 4), ("C6", 5), ("C7", 6))}
-        rep = {k: E.compute(1, ci, 0, dict(testfac=0.0)) for k, ci in (("C1", 0), ("C4", 3), ("C5", 4), ("C6", 5), ("C7", 6))}
+        yield new
     finally:
         for k, v in keep.items():
             I.MARKET["listing"][k]["v"] = v
+
+
+def what_if(s):
+    """Engine re-run with BASE listing prices set to the market averages (12" scaled to E-flute, as in the model)."""
+    cfgs = (("C1", 0), ("C4", 3), ("C5", 4), ("C6", 5), ("C7", 6))
+    base = {k: E.compute(1, ci, 0) for k, ci in cfgs}
+    with market_average(s) as new:
+        alt = {k: E.compute(1, ci, 0) for k, ci in cfgs}
+        rep = {k: E.compute(1, ci, 0, dict(testfac=0.0)) for k, ci in cfgs}
     return base, alt, rep, new
 
 
